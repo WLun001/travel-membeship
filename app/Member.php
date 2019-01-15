@@ -8,7 +8,7 @@ class Member extends Model
 {
     /**
      * The attributes that are mass assignable
-     * 
+     *
      * @var array
      */
     protected $fillable = [
@@ -21,4 +21,12 @@ class Member extends Model
         'city',
         'state',
     ];
+
+    /**
+     * Get the division that the member joined.
+     */
+    public function division()
+    {
+        return $this->belongsTo(Division::class);
+    }
 }
