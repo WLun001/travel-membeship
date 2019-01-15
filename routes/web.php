@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/division/create', 'DivisionController@create')->name('divison.create');
-Route::post('/division/', 'DivisionController@store')->name('diivsion.store');
+Route::get('/division/create', 'DivisionController@create')->name('division.create');
+Route::post('/division/', 'DivisionController@store')->name('division.store');

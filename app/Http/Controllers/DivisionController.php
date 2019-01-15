@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Division;
 
 class DivisionController extends Controller
 {
@@ -12,7 +13,8 @@ class DivisionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create() {
-
+        $division = new Division();
+        return view('divisions.create', ['division' => $division]);
     }
 
     
