@@ -4,16 +4,18 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Division extends Model
+class Member extends Model
 {
     /**
-     *  The attributes that are mass assignable
+     * The attributes that are mass assignable
      * 
      * @var array
      */
     protected $fillable = [
-        'code',
+        'membership_no',
+        'nric',
         'name',
+        'gender',
         'address',
         'postcode',
         'city',
