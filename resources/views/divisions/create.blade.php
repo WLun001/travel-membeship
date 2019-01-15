@@ -1,5 +1,7 @@
 <?php
+
 use App\Common;
+
 ?>
 
 @extends('layouts.app')
@@ -113,5 +115,5 @@ use App\Common;
             {!! Form::close() !!}
         </div>
     </div>
-        
+
 @endsection
