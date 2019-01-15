@@ -16,7 +16,7 @@ class CreateDivisionsTable extends Migration
         Schema::create('divisions', function (Blueprint $table) {
             $table->engine = 'InnoDb';
             $table->increments('id');
-            $table->char('char', 3)->unique();
+            $table->char('code', 3)->unique();
             $table->string('name', 100)->index();
             $table->text('address')->nullable();
             $table->string('postcode', 5)->index();

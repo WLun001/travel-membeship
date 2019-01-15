@@ -16,4 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/division/create', 'DivisionController@create')->name('division.create');
+Route::get('/division', 'DivisionController@index')->name('division.index');
+Route::get('/division/{id}', 'DivisionController@show')->name('division.show');
+Route::get('/division/{id}/edit', 'DivisionController@edit')->name('division.edit');
+
 Route::post('/division/', 'DivisionController@store')->name('division.store');
+
+Route::put('division/{id}', 'DivisionController@update')->name('division.update');
