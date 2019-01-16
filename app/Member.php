@@ -29,4 +29,12 @@ class Member extends Model
     {
         return $this->belongsTo(Division::class);
     }
+
+    /**
+     * The groups that belong to the member.
+     */
+    public function groups()
+    {
+        return $this->belongsToMany(Group::class);
+    }
 }
