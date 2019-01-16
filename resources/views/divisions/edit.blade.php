@@ -9,6 +9,7 @@ use App\Common;
     <div class="panel-body">
         {!! Form::model($division, [
             'route' => ['division.update', $division->id],
+            'method' => 'put',
             'class' => 'form-horizontal'
         ]) !!}
 

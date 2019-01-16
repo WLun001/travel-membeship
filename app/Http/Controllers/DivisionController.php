@@ -91,7 +91,7 @@ class DivisionController extends Controller
         $division->fill($request->all());
         $division->save();
 
-        return redirect()->route('divisions.index');
+        return redirect()->route('division.index');
     }
 
 }
