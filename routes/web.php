@@ -25,7 +25,6 @@ Route::get('/', function () {
 //Route::post('/division/', 'DivisionController@store')->name('division.store');
 //
 //Route::put('division/{id}', 'DivisionController@update')->name('division.update');
-
 Route::resource('/division', 'DivisionController', ['except' => ['destroy']]);
 Route::resource('/member', 'MemberController', ['except' => ['destroy']]);
 Route::resource('/group', 'GroupController', ['except' => ['destroy']]);
